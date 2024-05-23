@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento | Arte na Palhinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="site-title">Arte Na Palhinha</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="budget.html">Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="budget" class="budget-section">
+            <h2>Orçamento</h2>
+            <p>Faça agora mesmo o seu orçamento!</p>
+            <form id="budget-form">
+                <label for="service-empalhar">Empalhar:</label>
+                <select id="service-empalhar">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="option1">1- Assento e Encosto(palhinha sintética)</option>
+                    <option value="option2">2- Assento e Encosto(palhinha indiana)</option>
+                    <option value="option3">3- Assento ou Encosto(palhinha sintética)</option>
+                    <option value="option4">4- Assento ou Encosto(palhinha indiana)</option>
+                    <option value="option5">5- Marquesa(palhinha sintética)</option>
+                    <option value="option6">6- Marquesa(palhinha indiana)</option>
+                    
+                </select>
+                <br><br>
+                <button id="mostrar-preco">Mostrar Preço</button>
+               
+            </form>
+            <div id="service-price"></div>
+            <!-- Aqui você pode adicionar um formulário de contato para solicitar orçamentos -->
+            <div id="contact-message"></div>
+        </section>
+        
+    </main>
+    <footer>&copy;@arte_na_palhinha</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

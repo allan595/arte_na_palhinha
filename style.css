@@ -1,0 +1,494 @@
+/* Correções aplicadas no CSS */
+
+/* Estilo do título do site */
+.site-title {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(77, 77, 46);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    overflow: hidden; /* Oculta a barra de rolagem horizontal */
+    background-image: url('./download.png');
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(61, 61, 47);
+    overflow-y: scroll;/*garante que a rolagem vertical funcione*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(255,255,255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.title-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    height: 0%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(62, 62, 43);
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0 15px; /* Separa os elementos da li */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: aquamarine;
+}
+
+.title-container {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255,255,255, 0.7);
+}
+
+.site-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 3px; 
+}
+
+main {
+    padding: 20px;
+    margin-top: -10px;
+    flex-grow: 1;
+}
+
+.about-section,
+.gallery-section,
+.contact-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    height: auto;
+    max-width: 100%;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.budget-section {
+    background-color: rgba(255,255,255, 0.8);
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.budget-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.budget-section p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.budget-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.budget-section select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.budget-section button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.budget-section button:hover {
+    background-color: rgb(17, 61, 47);
+}
+
+#service-price {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+#contact-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+#contact-message a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    background-color: rgba(255,255,255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.contact-section p strong {
+    color: #333;
+}
+
+.gallery-section {
+    padding: 20px;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.gallery-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Corrigido "transform" */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 60%;
+    height: auto;
+    max-height: 400px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover { /* Corrigido o seletor */
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Estilizando a seção de destaques */
+.destaques-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Estilizando os destaques individuais */
+.destaque {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    vertical-align: top;
+}
+
+/* Estilizando as imagens dos destaques */
+.destaque img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd; /* Adiciona uma borda inferior */
+}
+
+.destaque p {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilo para a seção sobre nós */
+.about-section {
+    padding: 20px;
+    background-color: rgba(255,255,255, 0.8);
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para a seção nossa história */
+.history-section {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.history-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.history-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para a seção missão e visão */
+.mission-vision-section { /* Corrigido "mission-vision-section" */
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.mission-vision-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.mission-vision-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.mission-vision-section strong {
+    color: #000;
+}
+
+/* Estilo para a seção valores */
+.values-section {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.values-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values-section li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção nossa equipe */
+.team-section {
+    padding: 20px;
+    background-color: rgba(255,255,255, 0.7);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;/* permite que os items se envolvam em varias linhas*/
+    justify-content: center;/* centraliza os items horizontalmente*/
+    gap: 20px;
+}
+
+.team-section h2 {
+    font-size: 24px;
+    color: #333;
+    width: 100%;/*Faz com que o titulo ocupe toda a largura*/
+    text-align: center;/*centraliza o texto*/
+    margin-bottom: 20px;/*Adiciona um espaço abaixo do titulo*/
+}
+
+.team-member {
+    flex: 1 1 calc(25% - 40px);/*responsivo, 25% da largura menos o gap*/
+    max-width: calc(25% - 40px);/*garante que o tamanho maximo seja respeitado*/
+    margin: 20px;/*adiciona espaço ao redor de cada membro*/
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;/*adiciona uma cor de fundo para destacar cada membro*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0; /* Corrigido para "margin-top: 10px; margin-bottom: 0;" */
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px 10px;
+}
+
+
+
+
+
+
+

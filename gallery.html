@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Arte na Palhinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="site-title">Arte Na Palhinha</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="budget.html">Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="gallery" class="gallery-section">
+            <h2>Galeria</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="imagem1.png" alt="Imagem 1"></div>
+                    <div class="slide"><img src="imagem2.png" alt="Imagem 2"></div>
+                    <div class="slide"><img src="imagem3.png" alt="Imagem 3"></div>
+                    <div class="slide"><img src="imagem4.png" alt="Imagem 3"></div>
+                    <div class="slide"><img src="imagem5.png" alt="Imagem 3"></div>
+                    <!-- Adicione mais imagens aqui, se desejar -->
+                </div>
+
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>    
+        </section>
+    </main>
+    <footer>&copy;@arte_na_palhinha</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
